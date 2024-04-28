@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator2</title>
+</head>
+<body>
+<input id="num1"/>
+<p>
+and
+</p>
+
+<input id="num2"/>
+<button class="plus">+</button>
+<button class="minus">-</button>
+
+<p id="result"></p>
+
+<script>
+    function plusCalculate(){
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var result = num1 + num2;
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+    document.querySelector('.plus').addEventListener('click' , function (){
+        plusCalculate()
+    })
+
+    function minusCalculate(){
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var result = num1 - num2;
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+    document.querySelector('.minus').addEventListener('click' , function (){
+        minusCalculate()
+    })
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
