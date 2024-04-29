@@ -13,6 +13,7 @@ and
 <input id="num2"/>
 <button class="plus">+</button>
 <button class="minus">-</button>
+<button class="multiplication">*</button>
 
 <p id="result"></p>
 
@@ -39,6 +40,19 @@ and
 
     document.querySelector('.minus').addEventListener('click' , function (){
         minusCalculate()
+    })
+
+
+    function multiplicationCalculate(){
+        var num1 = Number(document.getElementById("num1").value);
+        var num2 = Number(document.getElementById("num2").value);
+        var result = num1 * num2;
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+    document.querySelector('.multiplication').addEventListener('click' , function (){
+        plusCalculate()
     })
 
 
